@@ -1,3 +1,4 @@
 node_modules
 booksBasicDetails
 booksSequentialArtAllDetails
+/cypress/videos
