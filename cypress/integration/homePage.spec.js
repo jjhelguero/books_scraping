@@ -25,7 +25,7 @@ const getPaginatedSearchResults = () => {
                                         availability: Cypress.$(`${productInformationTableSelector} tbody>tr:nth-child(6)>td`)[index].innerText.trim(),
                                         numberOfReviews: Cypress.$(`${productInformationTableSelector} tbody>tr:nth-child(7)>td`)[index].innerText.trim()
                                     }
-                                    cy.writeFile('allBookDetailsWithPagination',book,{flag: 'a+', log:false})
+                                    cy.writeFile('booksSequentialArtAllDetails',book,{flag: 'a+', log:false})
                                     return book
                                 })
                             })
@@ -73,7 +73,7 @@ it('It scrapes basic book data on landing page', () => {
             availability: Cypress.$('.instock.availability')[index].innerText.trim(),
             starRating: Cypress.$('.star-rating')[index].classList[1].trim()
         }
-        cy.writeFile('webScraping_books',book,{flag: 'a+', log:false})
+        cy.writeFile('booksBasicDetails',book,{flag: 'a+', log:false})
 
         return book
     })
