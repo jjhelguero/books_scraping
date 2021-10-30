@@ -1,0 +1,5 @@
+{
+    "baseUrl": "https://books.toscrape.com/",
+    "viewportHeight":1080,
+    "viewportWidth":1600
+}
